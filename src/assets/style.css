@@ -1,0 +1,115 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    height: 80px !important;
+}
+
+p {
+    margin: 0;
+}
+#brand {
+    margin: 0;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    text-align: center;
+}
+#login-form, #register-form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+#login-form main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#login-form .input-field input[type=date]:focus + label,
+#login-form .input-field input[type=text]:focus + label,
+#login-form .input-field input[type=email]:focus + label,
+#login-form .input-field input[type=password]:focus + label {
+    color: #e91e63;
+}
+
+#login-form .input-field input[type=date]:focus,
+#login-form .input-field input[type=text]:focus,
+#login-form .input-field input[type=email]:focus,
+#login-form .input-field input[type=password]:focus {
+    border-bottom: 2px solid #e91e63;
+    box-shadow: none;
+}
+
+#register-form form {
+    border: 1px #f2f2f2 solid;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+#register-form form .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#alert {
+    background-color: rgba(255, 0, 0, 0.2);;
+}
+#alert ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#navbar .login-info {
+    display: flex;
+    justify-content: space-between;
+}
+#navbar .login-info p{
+    margin-right: 40px;
+}
+.add {
+    margin-left: 20px;
+}
+
+#cards {
+    margin-top: 20px;
+}
+
+#cards img {
+    height: 150px;
+}
+
+#vaccine-form {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#vaccine-form form {
+    padding: 40px;
+    margin-top: 50px;
+    width: 340px;
+    height: fit-content;
+}
+
+#vaccine-form .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
